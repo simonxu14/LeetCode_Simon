@@ -1,0 +1,25 @@
+class Solution(object):
+    def letterCombinations(self, digits):
+        dict = {"2":"abc", "3":"def", "4":"ghi", "5":"jkl", "6":"mno", "7":"pqrs", "8":"tuv", "9":"wxyz"}
+        result = list()
+        phone= list()
+        if len(digits) == 0:
+            return []
+        for i in range(len(digits)):
+            phone.append(dict[digits[i]])
+        for k in range(len(phone[0])):
+            result.append(phone[0][k])
+        for m in range(1, len(phone)):
+            index = result
+            result = []
+            for n in range(len(index)):
+                for k in range(len(phone[m])):
+                    result.append(index[n]+phone[m][k])
+        return result
+
+        # for i in range(len(digits)):
+        #     for j in range(len(dict[digits[i]])):
+        #         result.append(dict[digits[i]][j])
+
+S = Solution()
+print S.letterCombinations("239")
