@@ -16,10 +16,8 @@ class Solution(object):
         result.append(0)
         j = 0
         for i in range(0, n):
-            high = 1 << n
+            high = 1 << i
             long = len(result)
-
-
             j = long - 1
             while j >= 0:
                 result.append(high + result[j])
