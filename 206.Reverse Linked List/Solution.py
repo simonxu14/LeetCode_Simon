@@ -27,7 +27,6 @@ class Solution(object):
         # return result
 
 
-        # Your runtime beats 94.18% of python submissions.
         prev = None
         current = head
         next = None
