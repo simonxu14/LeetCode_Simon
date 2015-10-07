@@ -1,4 +1,5 @@
 __author__ = 'Simon'
+
 # class Solution(object):
 #     def merge(self, nums1, m, nums2, n):
 #
@@ -41,3 +42,5 @@ class Solution(object):
     def merge(self, nums1, m, nums2, n):
         nums1[:] = nums1[:m] + nums2[:n]
         nums1.sort()
+
+
