@@ -17,7 +17,13 @@ xcuserdata/
 # Generated files
 *.o
 *.pyc
+
+#Java modules
+bin
+.settings
 *.class
+*.classpath
+*.project
 
 #Python modules
 MANIFEST
